@@ -105,7 +105,7 @@ class _InputTokenState extends State<InputToken> {
                   color: Colors.green,
                   onPressed: () {
                     setState(() {
-                      if (_formkey.currentState.validate());
+                      if (_formkey.currentState.validate())
                     return null;
                     }
                     );
