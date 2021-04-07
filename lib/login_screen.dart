@@ -1,6 +1,8 @@
+import 'package:etoken_flutter_app/OrganizationPage.dart';
 import 'package:flutter/material.dart';
 import 'ReuseAble.dart';
 import 'registerScreen.dart';
+import 'OrganizationPage.dart';
 
 class Login_form extends StatefulWidget {
   @override
@@ -55,7 +57,7 @@ class _Login_formState extends State<Login_form> {
                         height: 35.0,
                         child: RaisedButton(
                           onPressed: () {
-                            setState(() {});
+                            setState(() {Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => Organization_Page()) );});
                           },
                           color: Theme.of(context).primaryColor,
                           splashColor: Colors.white,
