@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'ReuseAble.dart';
+import 'registerScreen.dart';
 
 class Login_form extends StatefulWidget {
   @override
@@ -65,7 +66,7 @@ class _Login_formState extends State<Login_form> {
                           child: Text(
                             "Sign In",
                             style: TextStyle(
-                                fontWeight: FontWeight.bold,
+                                // fontWeight: FontWeight.bold,
                                 fontSize: 20,
                                 color: Colors.white),
                           ),
@@ -80,7 +81,9 @@ class _Login_formState extends State<Login_form> {
                         height: 35.0,
                         child: RaisedButton(
                           onPressed: () {
-                            setState(() {});
+                            setState(() {
+                              Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => SignUpForm()) );
+                            });
                           },
                           color: Theme.of(context).primaryColor,
                           splashColor: Colors.white,
@@ -91,7 +94,7 @@ class _Login_formState extends State<Login_form> {
                           child: Text(
                             "Register Now",
                             style: TextStyle(
-                                fontWeight: FontWeight.bold,
+                                // fontWeight: FontWeight.bold,
                                 fontSize: 20,
                                 color: Colors.white),
                           ),
