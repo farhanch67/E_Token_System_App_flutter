@@ -21,11 +21,11 @@ class SignUpFormState extends State<SignUpForm> {
     if (_formKey.currentState.validate() && _termsChecked) {
       _formKey.currentState.save();
 
-      print("Name " + _name);
-      print("Email " + _email);
-      print("Phone " + _phone.toString());
-      print("Password " + _password);
-      print("Termschecked " + _termsChecked.toString());
+      // print("Name " + _name);
+      // print("Email " + _email);
+      // print("Phone " + _phone.toString());
+      // print("Password " + _password);
+      // print("Termschecked " + _termsChecked.toString());
       Scaffold.of(context)
           .showSnackBar(SnackBar(content: Text('Form Submitted')));
     }

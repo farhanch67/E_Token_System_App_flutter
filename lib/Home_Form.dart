@@ -105,7 +105,10 @@ class _InputTokenState extends State<InputToken> {
                   color: Colors.green,
                   onPressed: () {
                     setState(() {
-                      if (_formkey.currentState.validate())
+                      if (_formkey.currentState.validate()){
+                        Scaffold.of(context)
+                            .showSnackBar(SnackBar(content: Text('Token Generated')));
+                      }
                     return null;
                     }
                     );
